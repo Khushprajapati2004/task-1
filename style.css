@@ -1,0 +1,126 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 6rem 20rem;
+    background-color: #dde3f6;
+}
+
+.main {
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 38px, rgba(0, 0, 0, 0.24) 0px 16px 12px;
+}
+
+.left {
+    padding-left: 3.5rem;
+    margin-top: 1.5rem;
+}
+
+.left h2 {
+    font-size: 2.5rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    /* font-family: 'Brush Script MT', cursive; */
+}
+
+.left p {
+    font-size: .9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: #4f5058;
+    margin-bottom: 1.5rem;
+}
+
+.left span {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.left span img {
+    margin-top: .8rem;
+    height: 1rem;
+    margin-right: 1rem;
+}
+
+form {
+    padding-top: 2rem;
+}
+
+form label {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+form input {
+    margin: .5rem 0;
+    padding: .7rem;
+    border-radius: .4rem;
+    width: 20rem;
+    border: 1px solid rgb(143, 142, 142);
+}
+
+form button {
+    background: #232742;
+    color: white;
+    font-weight: 600;
+    padding: .7rem 3.5rem;
+    border-radius: .4rem;
+    margin-top: 1rem;
+}
+
+.right {
+    margin-left: 4rem;
+}
+
+.right img {
+    height: 32rem;
+}
+
+.right .mobile-img {
+    display: none;
+}
+
+@media (max-width: 431px) {
+
+    body {
+        padding: 0rem;
+    }
+
+    .main {
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 0;
+        width: 26rem;
+    }
+    
+
+    .right {
+        margin-left: 0;
+    }
+
+    .right img {
+        display: none;
+    }
+
+    .right .mobile-img {
+        display: block;
+        width: 26rem;
+        height: 19.8rem;
+        margin-top: 0;
+    }
+    
+    form button {
+        margin-bottom: 8rem;
+    }
+    
+    
+}
+
+.duplicate {
+    display: none;
+}
